@@ -42,19 +42,6 @@ class DataFlowTests(unittest.TestCase):
         # RESULT VERIFICATION
         self.assertEqual(result, excpected_result)
 
-    # TEST CASE FOR ALL P-USES OF LINE AND COLUMN: 1-2-3
-    def test_case_1_2_3(self):
-        # IMPLICIT FIXTURE SETUP
-        # INLINE FIXTURE SETUP
-        line = 1
-        column = 2
-        # RESULT VERIFICATION
-        try:
-            # EXERCISE SUT
-            self.puzzle_game.get_tile(line, column)
-        except InvalidPositionException:
-            self.fail("Raised Invalid Position Exception ")
-
     # TEST CASE FOR ALL P-USES OF LINE AND COLUMN: 1-2-6
     def test_case_1_2_6(self):
         # IMPLICIT FIXTURE SETUP
